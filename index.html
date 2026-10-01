@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ansh Shoes Collection</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #ccc;
+        }
+
+        .hero {
+            background: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #111;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #666;
+        }
+
+        .brands {
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        .brands h2 {
+            margin-bottom: 20px;
+        }
+
+        .brand-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .brand {
+            background: #111;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+        }
+
+        .products {
+            padding: 20px 15px 40px;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .product-grid {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+        }
+
+        .card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 7px;
+        }
+
+        .brand-name {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .contact h2 {
+            margin-bottom: 12px;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 15px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #000;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ANSH SHOES COLLECTION</h1>
+        <p>Explore popular footwear styles</p>
+    </header>
+
+
+    <!-- YOUR PHOTO -->
+    <section class="hero">
+
+        <!-- Replace "myphoto.jpg" with your photo file name -->
+        <img src="myphoto.jpg" alt="Ansh">
+
+        <h2>Welcome to Ansh's Collection</h2>
+
+        <p>
+            A showcase of stylish footwear from popular brands.
+        </p>
+
+    </section>
+
+
+    <!-- BRANDS -->
+    <section class="brands">
+
+        <h2>Popular Brands</h2>
+
+        <div class="brand-list">
+            <div class="brand">Nike</div>
+            <div class="brand">Adidas</div>
+            <div class="brand">Puma</div>
+            <div class="brand">Reebok</div>
+            <div class="brand">Skechers</div>
+            <div class="brand">ASICS</div>
+            <div class="brand">Vans</div>
+            <div class="brand">New Balance</div>
+        </div>
+
+    </section>
+
+
+    <!-- SHOES -->
+    <section class="products">
+
+        <h2>Featured Shoes</h2>
+
+        <div class="product-grid">
+
+
+            <div class="card">
+
+                <img src="shoe1.jpg" alt="Sports Shoe">
+
+                <div class="card-content">
+
+                    <div class="brand-name">Nike</div>
+
+                    <h3>Sports Running Shoe</h3>
+
+                    <p>Comfortable everyday running style.</p>
+
+                    <div class="price">₹2,999</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="shoe2.jpg" alt="Adidas Shoe">
+
+                <div class="card-content">
+
+                    <div class="brand-name">Adidas</div>
+
+                    <h3>Classic Sports Shoe</h3>
+
+                    <p>Modern design for everyday wear.</p>
+
+                    <div class="price">₹2,499</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="shoe3.jpg" alt="Puma Shoe">
+
+                <div class="card-content">
+
+                    <div class="brand-name">Puma</div>
+
+                    <h3>Casual Sneaker</h3>
+
+                    <p>Stylish sneaker for casual outfits.</p>
+
+                    <div class="price">₹2,199</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="shoe4.jpg" alt="Running Shoe">
+
+                <div class="card-content">
+
+                    <div class="brand-name">ASICS</div>
+
+                    <h3>Running Shoes</h3>
+
+                    <p>Designed for an active lifestyle.</p>
+
+                    <div class="price">₹3,499</div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact">
+
+        <h2>Contact Ansh</h2>
+
+        <p>For more information, contact me.</p>
+
+        <!-- Replace 91XXXXXXXXXX with your real number -->
+        <a href="https://wa.me/91XXXXXXXXXX">
+            WhatsApp Me
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 Ansh Shoes Collection
+
+    </footer>
+
+</body>
+</html>
